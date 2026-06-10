@@ -9,7 +9,6 @@
 //! - `evaluate` — batch definition evaluation, screener (always in runtime WASM)
 //! - `definition` — always: option sets + migrations; `definition-assembly`: `assembleDefinition`
 //! - `value_coerce` — `coerceFieldValue` (always)
-//! - `changeset` — changeset dependency analysis (key extraction, connected components)
 //! - `document` — `document-api`: detect type, schema plan; `lint`: `lintDocument*`
 //! - `mapping` — `mapping-api`
 //! - `registry` — `registry-api`
@@ -20,7 +19,6 @@
 
 #[cfg(feature = "changelog-api")]
 mod changelog;
-mod changeset;
 mod definition;
 #[cfg(feature = "document-api")]
 mod document;
